@@ -22,7 +22,7 @@ $qry="INSERT INTO emp (id,name,salary,doj)
        	$response=array("status"=>1,"status_message"=>"data inserted");
        }
        else{
-       	$response=array("status"=>0,"status_message"=>"error in inserting");
+       	$response=array("status"=>0,"status_message"=>"error in  inserting");
        }
        
 } catch (PDOException $e) {
