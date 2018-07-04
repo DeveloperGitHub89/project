@@ -8,11 +8,7 @@ $conn=$db->getConnection();
 $qry="INSERT INTO emp (id,name,salary,doj) 
     VALUES (:id,:name,:salary,:doj)";
     // prepare sql and bind parameters
-    $stmt = $conn->prepare($qry);
-    $stmt->bindParam(':id', $id);
-    $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':salary', $salary);
-    $stmt->bindParam(':doj', $doj);
+    
     $id=htmlspecialchars($_POST["id"]);
      $name=htmlspecialchars($_POST["name"]);
       $doj=htmlspecialchars($_POST["doj"]);
